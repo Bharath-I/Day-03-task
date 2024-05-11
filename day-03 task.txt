@@ -1,0 +1,38 @@
+1. how to compare two json have the same properties without order?
+
+a. let obj1 = {name:"person 1", age:5};
+
+b.let obj2 = {age:5, name:"person1"};
+
+ANSWER :
+ 
+
+ console.log(person.name)
+ 
+ console.log(person['age']);
+
+
+2. Use the RestCountries-Api(API-https://restcountries.com/v3.1/all) and display all the country flags in the console.
+   
+ANSWER : 
+ 
+       for(var i in res)
+       {
+    
+         results are printed as png files.
+      
+         console.log(res[i].flags.png);
+    }
+
+
+3. Use the same rest countries and print all countries names , regions , sub-region and populations
+
+ANSWER :
+
+      for(var i in res)
+        {
+        
+          results are printed in the "Country_name-Region-Sub_Region-Population" format.
+        
+             console.log(res[i].name.common,"-",res[i].region,"-",res[i].subregion,"-",res[i].population);
+    }
